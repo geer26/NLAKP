@@ -6,6 +6,6 @@ from app import app, limiter
 
 @app.route('/')
 @app.route('/index')
-@limiter.limit('1/10second')
+#@limiter.limit('1/10second')
 def index():
     return jsonify({'message':'Hello World!'})
